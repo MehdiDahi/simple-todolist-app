@@ -10,7 +10,7 @@ app.use(express.json());
 app.use("/tasks", taskRoutes);
 
 mongoose
-  .connect("mongodb+srv://admin:admin123@tasksdb.i8hi9oy.mongodb.net/?appName=TasksDB")
+  .connect("mongodb+srv://userdb:passwordb@dbname.i8hi9oy.mongodb.net/?appName=dbname")
   .then(() => {
     console.log("db connected");
     app.listen(PORT, () => {
